@@ -1,0 +1,44 @@
+app-id: org.flatpak.flatpak-builder-tools
+branch: '20.08'
+runtime: org.freedesktop.Sdk
+runtime-version: '20.08'
+sdk: org.freedesktop.Sdk
+command: /bin/sh
+finish-args:
+  - --env=PERL5LIB=/app/lib/perl5
+  - --filesystem=host
+  - --share=network
+modules:
+  - name: flatpak-builder-tools
+    buildsystem: simple
+    build-commands:
+      - install -dm755 /app/{bin,tools}
+      - cp --recursive --preserve=mode tools/* /app/tools/
+      - find /app/tools -type f -perm 0755 |
+          xargs ln -s -t /app/bin/
+    sources:
+      - type: git
+        url: https://github.com/flatpak/flatpak-builder-tools.git
+        branch: master
+        dest: tools
+    modules:
+      - python-dependencies.json
+      - name: perl-dependencies
+        buildsystem: simple
+        build-options:
+          env:
+            - PERL5LIB=/app/lib/perl5
+        build-commands:
+          - perl-libs/install.sh
+        post-install:
+          # workaround for cpanm acting silly and installs files without write permission
+          - find /app -type f ! -perm -0200 -exec
+              chmod u+w '{}' \;
+        sources:
+          - perl-dependencies-sources.json
+          - type: shell
+            commands:
+              # fix the generated install.sh to avoid having it try to install into /usr
+              - sed -e 's|\(perl Makefile.PL\) \&\&|\1 INSTALL_BASE=/app \&\&|'
+                  -e 's|\(perl Build.PL\) \&\&|\1 --install_base=/app \&\&|'
+                  -i perl-libs/install.sh
