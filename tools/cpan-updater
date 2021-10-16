@@ -12,6 +12,6 @@ done < $_req
 flatpak run \
   --filesystem=$PWD \
   --command=flatpak-cpan-generator.pl \
-  io.github.flatpak.flatpak-builder-tools \
+  org.flatpak.flatpak-builder-tools \
   --output ${_mod}-sources.json \
   $_perl_mods
