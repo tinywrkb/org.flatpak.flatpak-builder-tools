@@ -119,7 +119,9 @@ modules:
                 path: .
 #     - name: dependencies-offline-install
 #       modules:
-#         - python-dependencies.json
+#         - python-aiohttp/python-aiohttp.json
+#         - python-requirements-parser/python-requirements-parser.json
+#         - python-toml/python-toml.json
 #         - name: perl-dependencies
 #           buildsystem: simple
 #           build-options:
