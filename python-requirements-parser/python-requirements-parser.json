@@ -1,0 +1,29 @@
+{
+    "name": "python-requirements-parser",
+    "buildsystem": "simple",
+    "build-commands": [
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"requirements-parser\" --no-build-isolation"
+    ],
+    "sources": [
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/c8/0d/6c9eb15fd4f6f45973ff1c70c170f2c30803415874e2e47c92eeae509085/types_setuptools-57.4.14-py3-none-any.whl",
+            "sha256": "828f7e7e51e157876f47c80518b23ba0c3c36aa8081efd39d5d39f393938aec9",
+            "x-checker-data": {
+                "type": "pypi",
+                "name": "types-setuptools",
+                "packagetype": "bdist_wheel"
+            }
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/f8/89/612e3b326d87780dc1daf39af7696634f969838213cddae4f553f75d04ae/requirements_parser-0.5.0-py3-none-any.whl",
+            "sha256": "e7fcdcd04f2049e73a9fb150d8a0f9d51ce4108f5f7cbeac74c484e17b12bcd9",
+            "x-checker-data": {
+                "type": "pypi",
+                "name": "requirements-parser",
+                "packagetype": "bdist_wheel"
+            }
+        }
+    ]
+}

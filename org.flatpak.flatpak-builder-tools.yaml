@@ -18,10 +18,12 @@ modules:
       - type: git
         url: https://github.com/flatpak/flatpak-builder-tools.git
         branch: master
-        commit: 1c0923c9309f01c343fab4a15b4884ba74603e50
+        commit: ba5005689bac0f5bcfc8a9531da3c576260ceef2
         dest: tools
     modules:
-      - python-dependencies.json
+      - python-aiohttp/python-aiohttp.json
+      - python-requirements-parser/python-requirements-parser.json
+      - python-toml/python-toml.json
       - name: perl-dependencies
         buildsystem: simple
         build-options:
