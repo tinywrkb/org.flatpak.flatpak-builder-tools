@@ -33,6 +33,10 @@ modules:
         url: https://github.com/flatpak/flatpak-builder-tools.git
         branch: master
         dest: tools
+      - type: patch
+        path: fbt-cpan-escaping.patch
+        options:
+          - --directory=tools
     modules:
       - name: dependencies-online-install
         modules:
@@ -137,6 +141,6 @@ modules:
 #             - type: shell
 #               commands:
 #                 # fix the generated install.sh to avoid having it try to install into /usr
-#                 - sed -e 's|\(perl Makefile.PL\) \&\&|\1 INSTALL_BASE=/app \&\&|'
+#                 - sed -e 's|\(perl Makefile.PL\).* \&\& \(make install\).*|\1 INSTALL_BASE=/app \&\& \2|' -e
 #                     -e 's|\(perl Build.PL\) \&\&|\1 --install_base=/app \&\&|'
 #                     -i perl-libs/install.sh
