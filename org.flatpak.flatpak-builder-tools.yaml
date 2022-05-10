@@ -20,6 +20,10 @@ modules:
         branch: master
         commit: ba5005689bac0f5bcfc8a9531da3c576260ceef2
         dest: tools
+      - type: patch
+        path: fbt-cpan-escaping.patch
+        options:
+          - --directory=tools
     modules:
       - python-aiohttp/python-aiohttp.json
       - python-requirements-parser/python-requirements-parser.json
@@ -39,5 +43,5 @@ modules:
           - type: shell
             commands:
               # fix the generated install.sh to avoid having it try to install into /usr
-              - sed -e 's|\(perl Makefile.PL\) \&\&|\1 INSTALL_BASE=/app \&\&|' -e
+              - sed -e 's|\(perl Makefile.PL\).* \&\& \(make install\).*|\1 INSTALL_BASE=/app \&\& \2|' -e
                 's|\(perl Build.PL\) \&\&|\1 --install_base=/app \&\&|' -i perl-libs/install.sh
