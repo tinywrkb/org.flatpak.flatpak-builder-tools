@@ -9,9 +9,4 @@ while read -r line; do
   _perl_mods+=" $line"
 done < $_req
 
-flatpak run \
-  --filesystem=$PWD \
-  --command=flatpak-cpan-generator.pl \
-  org.flatpak.flatpak-builder-tools \
-  --output ${_mod}-sources.json \
-  $_perl_mods
+flatpak-cpan-generator.pl --output ${_mod}-sources.json $_perl_mods

@@ -6,11 +6,7 @@ _FPID=org.flatpak.flatpak-builder-tools
 
 _TOOLSDIR=$PWD/tools
 
-flatpak run \
-  --runtime=org.freedesktop.Sdk//21.08 \
-  --filesystem=$PWD \
-  org.flathub.flatpak-external-data-checker \
-  --edit-only ${_FPID}.yaml
+flatpak-external-data-checker --edit-only ${_FPID}.yaml
 
 # python modules with multiple dependencies and have a requirements.txt file
 for _mod in python-aiohttp; do
