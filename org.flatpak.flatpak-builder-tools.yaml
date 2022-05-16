@@ -18,12 +18,8 @@ modules:
       - type: git
         url: https://github.com/flatpak/flatpak-builder-tools.git
         branch: master
-        commit: ba5005689bac0f5bcfc8a9531da3c576260ceef2
+        commit: d20cdd501bba3c49adc9840004ce984740d1aeed
         dest: tools
-      - type: patch
-        path: fbt-cpan-escaping.patch
-        options:
-          - --directory=tools
     modules:
       - python-aiohttp/python-aiohttp.json
       - python-requirements-parser/python-requirements-parser.json
