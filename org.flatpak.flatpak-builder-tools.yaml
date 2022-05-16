@@ -39,5 +39,6 @@ modules:
           - type: shell
             commands:
               # fix the generated install.sh to avoid having it try to install into /usr
-              - sed -e 's|\(perl Makefile.PL\).* \&\& \(make install\).*|\1 INSTALL_BASE=/app \&\& \2|' -e
-                's|\(perl Build.PL\) \&\&|\1 --install_base=/app \&\&|' -i perl-libs/install.sh
+              - sed -e 's|\(perl Makefile.PL\).* \&\& \(make install\).*|\1 INSTALL_BASE=/app
+                \&\& \2|' -e 's|\(perl Build.PL\) \&\&|\1 --install_base=/app \&\&|'
+                -i perl-libs/install.sh
