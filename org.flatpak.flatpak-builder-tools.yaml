@@ -18,7 +18,7 @@ modules:
       - type: git
         url: https://github.com/flatpak/flatpak-builder-tools.git
         branch: master
-        commit: d20cdd501bba3c49adc9840004ce984740d1aeed
+        commit: cc61d31f888f759a30610f0ab63e847082456cf7
         dest: tools
     modules:
       - python-aiohttp/python-aiohttp.json
