@@ -12,30 +12,6 @@
       "url": "https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Capture-Tiny-0.48.tar.gz"
    },
    {
-      "dest": "perl-libs/Params-Util",
-      "sha256": "499bb1b482db24fda277a51525596ad092c2bd51dd508fa8fec2e9f849097402",
-      "type": "archive",
-      "url": "https://cpan.metacpan.org/authors/id/R/RE/REHSACK/Params-Util-1.102.tar.gz"
-   },
-   {
-      "dest": "perl-libs/Sub-Install",
-      "sha256": "61e567a7679588887b7b86d427bc476ea6d77fffe7e0d17d640f89007d98ef0f",
-      "type": "archive",
-      "url": "https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Sub-Install-0.928.tar.gz"
-   },
-   {
-      "dest": "perl-libs/Data-OptList",
-      "sha256": "62c60ccaae88d5339ae36bcc8940b03388cf84adbf27828b1f8b300307103bab",
-      "type": "archive",
-      "url": "https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Data-OptList-0.112.tar.gz"
-   },
-   {
-      "dest": "perl-libs/Sub-Exporter",
-      "sha256": "23324887d6c590f145702f077d8ca42f1b2f26a3b76f08d66c2c1e21e606040c",
-      "type": "archive",
-      "url": "https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Sub-Exporter-0.988.tar.gz"
-   },
-   {
       "dest": "perl-libs/Module-Build",
       "sha256": "7e0f4c692c1740c1ac84ea14d7ea3d8bc798b2fb26c09877229e04f430b2b717",
       "type": "archive",
@@ -66,6 +42,30 @@
       "url": "https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Params-Validate-1.30.tar.gz"
    },
    {
+      "dest": "perl-libs/Sub-Install",
+      "sha256": "61e567a7679588887b7b86d427bc476ea6d77fffe7e0d17d640f89007d98ef0f",
+      "type": "archive",
+      "url": "https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Sub-Install-0.928.tar.gz"
+   },
+   {
+      "dest": "perl-libs/Params-Util",
+      "sha256": "499bb1b482db24fda277a51525596ad092c2bd51dd508fa8fec2e9f849097402",
+      "type": "archive",
+      "url": "https://cpan.metacpan.org/authors/id/R/RE/REHSACK/Params-Util-1.102.tar.gz"
+   },
+   {
+      "dest": "perl-libs/Data-OptList",
+      "sha256": "62c60ccaae88d5339ae36bcc8940b03388cf84adbf27828b1f8b300307103bab",
+      "type": "archive",
+      "url": "https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Data-OptList-0.112.tar.gz"
+   },
+   {
+      "dest": "perl-libs/Sub-Exporter",
+      "sha256": "23324887d6c590f145702f077d8ca42f1b2f26a3b76f08d66c2c1e21e606040c",
+      "type": "archive",
+      "url": "https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Sub-Exporter-0.988.tar.gz"
+   },
+   {
       "dest": "perl-libs/Getopt-Long-Descriptive",
       "sha256": "025402c0494a5c878038f0666f41ca1230ed0d689467df9211382ff3a355be86",
       "type": "archive",
@@ -73,9 +73,9 @@
    },
    {
       "dest": "perl-libs/Cpanel-JSON-XS",
-      "sha256": "eb746e3aed931191e927142c055bbfd363de511bdbaa335aad86ae50d13d6bfe",
+      "sha256": "02a67acee3de24a728c396486800e2a235591a543d0794449ad388fe3d5cff29",
       "type": "archive",
-      "url": "https://cpan.metacpan.org/authors/id/R/RU/RURBAN/Cpanel-JSON-XS-4.28.tar.gz"
+      "url": "https://cpan.metacpan.org/authors/id/R/RU/RURBAN/Cpanel-JSON-XS-4.31.tar.gz"
    },
    {
       "dest": "perl-libs/JSON-MaybeXS",
@@ -84,46 +84,22 @@
       "url": "https://cpan.metacpan.org/authors/id/E/ET/ETHER/JSON-MaybeXS-1.004003.tar.gz"
    },
    {
-      "dest": "perl-libs/Net-SSLeay",
-      "sha256": "47c2f2b300f2e7162d71d699f633dd6a35b0625a00cbda8c50ac01144a9396a9",
-      "type": "archive",
-      "url": "https://cpan.metacpan.org/authors/id/C/CH/CHRISN/Net-SSLeay-1.92.tar.gz"
-   },
-   {
-      "dest": "perl-libs/Mozilla-CA",
-      "sha256": "122c8900000a9d388aa8e44f911cab6c118fe8497417917a84a8ec183971b449",
-      "type": "archive",
-      "url": "https://cpan.metacpan.org/authors/id/A/AB/ABH/Mozilla-CA-20211001.tar.gz"
-   },
-   {
-      "dest": "perl-libs/IO-Socket-SSL",
-      "sha256": "36486b6be49da4d029819cf7069a7b41ed48af0c87e23be0f8e6aba23d08a832",
-      "type": "archive",
-      "url": "https://cpan.metacpan.org/authors/id/S/SU/SULLR/IO-Socket-SSL-2.074.tar.gz"
-   },
-   {
-      "dest": "perl-libs/LWP-MediaTypes",
-      "sha256": "8f1bca12dab16a1c2a7c03a49c5e58cce41a6fec9519f0aadfba8dad997919d9",
-      "type": "archive",
-      "url": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/LWP-MediaTypes-6.04.tar.gz"
-   },
-   {
-      "dest": "perl-libs/HTML-Tagset",
-      "sha256": "adb17dac9e36cd011f5243881c9739417fd102fce760f8de4e9be4c7131108e2",
-      "type": "archive",
-      "url": "https://cpan.metacpan.org/authors/id/P/PE/PETDANCE/HTML-Tagset-3.20.tar.gz"
-   },
-   {
       "dest": "perl-libs/URI",
-      "sha256": "16325d5e308c7b7ab623d1bf944e1354c5f2245afcfadb8eed1e2cae9a0bd0b5",
+      "sha256": "66abe0eaddd76b74801ecd28ec1411605887550fc0a45ef6aa744fdad768d9b3",
       "type": "archive",
-      "url": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/URI-5.10.tar.gz"
+      "url": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/URI-5.12.tar.gz"
    },
    {
-      "dest": "perl-libs/IO-HTML",
-      "sha256": "c87b2df59463bbf2c39596773dfb5c03bde0f7e1051af339f963f58c1cbd8bf5",
+      "dest": "perl-libs/Net-HTTP",
+      "sha256": "62faf9a5b84235443fe18f780e69cecf057dea3de271d7d8a0ba72724458a1a2",
       "type": "archive",
-      "url": "https://cpan.metacpan.org/authors/id/C/CJ/CJM/IO-HTML-1.004.tar.gz"
+      "url": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/Net-HTTP-6.22.tar.gz"
+   },
+   {
+      "dest": "perl-libs/Encode-Locale",
+      "sha256": "176fa02771f542a4efb1dbc2a4c928e8f4391bf4078473bd6040d8f11adb0ec1",
+      "type": "archive",
+      "url": "https://cpan.metacpan.org/authors/id/G/GA/GAAS/Encode-Locale-1.05.tar.gz"
    },
    {
       "dest": "perl-libs/TimeDate",
@@ -138,22 +114,28 @@
       "url": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-Date-6.05.tar.gz"
    },
    {
-      "dest": "perl-libs/Encode-Locale",
-      "sha256": "176fa02771f542a4efb1dbc2a4c928e8f4391bf4078473bd6040d8f11adb0ec1",
+      "dest": "perl-libs/LWP-MediaTypes",
+      "sha256": "8f1bca12dab16a1c2a7c03a49c5e58cce41a6fec9519f0aadfba8dad997919d9",
       "type": "archive",
-      "url": "https://cpan.metacpan.org/authors/id/G/GA/GAAS/Encode-Locale-1.05.tar.gz"
+      "url": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/LWP-MediaTypes-6.04.tar.gz"
+   },
+   {
+      "dest": "perl-libs/IO-HTML",
+      "sha256": "c87b2df59463bbf2c39596773dfb5c03bde0f7e1051af339f963f58c1cbd8bf5",
+      "type": "archive",
+      "url": "https://cpan.metacpan.org/authors/id/C/CJ/CJM/IO-HTML-1.004.tar.gz"
    },
    {
       "dest": "perl-libs/HTTP-Message",
-      "sha256": "576a53b486af87db56261a36099776370c06f0087d179fc8c7bb803b48cddd76",
+      "sha256": "0e59da0a85e248831327ebfba66796314cb69f1bfeeff7a9da44ad766d07d802",
       "type": "archive",
-      "url": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-Message-6.36.tar.gz"
+      "url": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-Message-6.37.tar.gz"
    },
    {
-      "dest": "perl-libs/HTML-Parser",
-      "sha256": "22564002f206af94c1dd8535f02b0d9735125d9ebe89dd0ff9cd6c000e29c29d",
+      "dest": "perl-libs/HTTP-Negotiate",
+      "sha256": "1c729c1ea63100e878405cda7d66f9adfd3ed4f1d6cacaca0ee9152df728e016",
       "type": "archive",
-      "url": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTML-Parser-3.78.tar.gz"
+      "url": "https://cpan.metacpan.org/authors/id/G/GA/GAAS/HTTP-Negotiate-6.01.tar.gz"
    },
    {
       "dest": "perl-libs/HTTP-Cookies",
@@ -174,52 +156,46 @@
       "url": "https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/File-Listing-6.15.tar.gz"
    },
    {
-      "dest": "perl-libs/HTTP-Negotiate",
-      "sha256": "1c729c1ea63100e878405cda7d66f9adfd3ed4f1d6cacaca0ee9152df728e016",
+      "dest": "perl-libs/HTML-Tagset",
+      "sha256": "adb17dac9e36cd011f5243881c9739417fd102fce760f8de4e9be4c7131108e2",
       "type": "archive",
-      "url": "https://cpan.metacpan.org/authors/id/G/GA/GAAS/HTTP-Negotiate-6.01.tar.gz"
+      "url": "https://cpan.metacpan.org/authors/id/P/PE/PETDANCE/HTML-Tagset-3.20.tar.gz"
    },
    {
-      "dest": "perl-libs/Net-HTTP",
-      "sha256": "62faf9a5b84235443fe18f780e69cecf057dea3de271d7d8a0ba72724458a1a2",
+      "dest": "perl-libs/HTML-Parser",
+      "sha256": "22564002f206af94c1dd8535f02b0d9735125d9ebe89dd0ff9cd6c000e29c29d",
       "type": "archive",
-      "url": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/Net-HTTP-6.22.tar.gz"
+      "url": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTML-Parser-3.78.tar.gz"
    },
    {
       "dest": "perl-libs/libwww-perl",
-      "sha256": "ae048023d275e1d6ad72882fa8b818f6e16d18d9cbda1f6f8e4012b93d4c834c",
+      "sha256": "96eec40a3fd0aa1bd834117be5eb21c438f73094d861a1a7e5774f0b1226b723",
       "type": "archive",
-      "url": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/libwww-perl-6.65.tar.gz"
+      "url": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/libwww-perl-6.67.tar.gz"
+   },
+   {
+      "dest": "perl-libs/Mozilla-CA",
+      "sha256": "122c8900000a9d388aa8e44f911cab6c118fe8497417917a84a8ec183971b449",
+      "type": "archive",
+      "url": "https://cpan.metacpan.org/authors/id/A/AB/ABH/Mozilla-CA-20211001.tar.gz"
+   },
+   {
+      "dest": "perl-libs/Net-SSLeay",
+      "sha256": "47c2f2b300f2e7162d71d699f633dd6a35b0625a00cbda8c50ac01144a9396a9",
+      "type": "archive",
+      "url": "https://cpan.metacpan.org/authors/id/C/CH/CHRISN/Net-SSLeay-1.92.tar.gz"
+   },
+   {
+      "dest": "perl-libs/IO-Socket-SSL",
+      "sha256": "36486b6be49da4d029819cf7069a7b41ed48af0c87e23be0f8e6aba23d08a832",
+      "type": "archive",
+      "url": "https://cpan.metacpan.org/authors/id/S/SU/SULLR/IO-Socket-SSL-2.074.tar.gz"
    },
    {
       "dest": "perl-libs/LWP-Protocol-https",
       "sha256": "cecfc31fe2d4fc854cac47fce13d3a502e8fdfe60c5bc1c09535743185f2a86c",
       "type": "archive",
       "url": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/LWP-Protocol-https-6.10.tar.gz"
-   },
-   {
-      "dest": "perl-libs/Sub-Quote",
-      "sha256": "6e4e2af42388fa6d2609e0e82417de7cc6be47223f576592c656c73c7524d89d",
-      "type": "archive",
-      "url": "https://cpan.metacpan.org/authors/id/H/HA/HAARG/Sub-Quote-2.006006.tar.gz"
-   },
-   {
-      "dest": "perl-libs/Class-Method-Modifiers",
-      "sha256": "ab5807f71018a842de6b7a4826d6c1f24b8d5b09fcce5005a3309cf6ea40fd63",
-      "type": "archive",
-      "url": "https://cpan.metacpan.org/authors/id/E/ET/ETHER/Class-Method-Modifiers-2.13.tar.gz"
-   },
-   {
-      "dest": "perl-libs/Role-Tiny",
-      "sha256": "d7bdee9e138a4f83aa52d0a981625644bda87ff16642dfa845dcb44d9a242b45",
-      "type": "archive",
-      "url": "https://cpan.metacpan.org/authors/id/H/HA/HAARG/Role-Tiny-2.002004.tar.gz"
-   },
-   {
-      "dest": "perl-libs/Moo",
-      "sha256": "e3030b80bd554a66f6b3c27fd53b1b5909d12af05c4c11ece9a58f8d1e478928",
-      "type": "archive",
-      "url": "https://cpan.metacpan.org/authors/id/H/HA/HAARG/Moo-2.005004.tar.gz"
    },
    {
       "dest": "perl-libs/Ref-Util-XS",
@@ -234,6 +210,12 @@
       "url": "https://cpan.metacpan.org/authors/id/A/AR/ARC/Ref-Util-0.204.tar.gz"
    },
    {
+      "dest": "perl-libs/Safe-Isa",
+      "sha256": "87f4148aa0ff1d5e652723322eab7dafa3801c967d6f91ac9147a3c467b8a66a",
+      "type": "archive",
+      "url": "https://cpan.metacpan.org/authors/id/E/ET/ETHER/Safe-Isa-1.000010.tar.gz"
+   },
+   {
       "dest": "perl-libs/Exporter-Tiny",
       "sha256": "00f0b95716b18157132c6c118ded8ba31392563d19e490433e9a65382e707101",
       "type": "archive",
@@ -241,15 +223,33 @@
    },
    {
       "dest": "perl-libs/Type-Tiny",
-      "sha256": "75cd06b612d1830ae9f4b22298b506b3ff04518fa7453f487c248cd62a906a2b",
+      "sha256": "178b6132a1cd362f6d53bab7a37d1eac1b81d20580ced4ff2f00c7f094fe0a5f",
       "type": "archive",
-      "url": "https://cpan.metacpan.org/authors/id/T/TO/TOBYINK/Type-Tiny-1.012004.tar.gz"
+      "url": "https://cpan.metacpan.org/authors/id/T/TO/TOBYINK/Type-Tiny-1.016007.tar.gz"
    },
    {
-      "dest": "perl-libs/Safe-Isa",
-      "sha256": "87f4148aa0ff1d5e652723322eab7dafa3801c967d6f91ac9147a3c467b8a66a",
+      "dest": "perl-libs/Sub-Quote",
+      "sha256": "6e4e2af42388fa6d2609e0e82417de7cc6be47223f576592c656c73c7524d89d",
       "type": "archive",
-      "url": "https://cpan.metacpan.org/authors/id/E/ET/ETHER/Safe-Isa-1.000010.tar.gz"
+      "url": "https://cpan.metacpan.org/authors/id/H/HA/HAARG/Sub-Quote-2.006006.tar.gz"
+   },
+   {
+      "dest": "perl-libs/Role-Tiny",
+      "sha256": "d7bdee9e138a4f83aa52d0a981625644bda87ff16642dfa845dcb44d9a242b45",
+      "type": "archive",
+      "url": "https://cpan.metacpan.org/authors/id/H/HA/HAARG/Role-Tiny-2.002004.tar.gz"
+   },
+   {
+      "dest": "perl-libs/Class-Method-Modifiers",
+      "sha256": "ab5807f71018a842de6b7a4826d6c1f24b8d5b09fcce5005a3309cf6ea40fd63",
+      "type": "archive",
+      "url": "https://cpan.metacpan.org/authors/id/E/ET/ETHER/Class-Method-Modifiers-2.13.tar.gz"
+   },
+   {
+      "dest": "perl-libs/Moo",
+      "sha256": "e3030b80bd554a66f6b3c27fd53b1b5909d12af05c4c11ece9a58f8d1e478928",
+      "type": "archive",
+      "url": "https://cpan.metacpan.org/authors/id/H/HA/HAARG/Moo-2.005004.tar.gz"
    },
    {
       "dest": "perl-libs/MetaCPAN-Client",
@@ -274,46 +274,46 @@
          "}",
          "(make_install perl-libs/App-cpanminus)",
          "(make_install perl-libs/Capture-Tiny)",
-         "(make_install perl-libs/Params-Util)",
-         "(make_install perl-libs/Sub-Install)",
-         "(make_install perl-libs/Data-OptList)",
-         "(make_install perl-libs/Sub-Exporter)",
          "(make_install perl-libs/Module-Build)",
          "(make_install perl-libs/Try-Tiny)",
          "(make_install perl-libs/Module-Runtime)",
          "(make_install perl-libs/Module-Implementation)",
          "(make_install perl-libs/Params-Validate)",
+         "(make_install perl-libs/Sub-Install)",
+         "(make_install perl-libs/Params-Util)",
+         "(make_install perl-libs/Data-OptList)",
+         "(make_install perl-libs/Sub-Exporter)",
          "(make_install perl-libs/Getopt-Long-Descriptive)",
          "(make_install perl-libs/Cpanel-JSON-XS)",
          "(make_install perl-libs/JSON-MaybeXS)",
-         "(make_install perl-libs/Net-SSLeay)",
-         "(make_install perl-libs/Mozilla-CA)",
-         "(make_install perl-libs/IO-Socket-SSL)",
-         "(make_install perl-libs/LWP-MediaTypes)",
-         "(make_install perl-libs/HTML-Tagset)",
          "(make_install perl-libs/URI)",
-         "(make_install perl-libs/IO-HTML)",
+         "(make_install perl-libs/Net-HTTP)",
+         "(make_install perl-libs/Encode-Locale)",
          "(make_install perl-libs/TimeDate)",
          "(make_install perl-libs/HTTP-Date)",
-         "(make_install perl-libs/Encode-Locale)",
+         "(make_install perl-libs/LWP-MediaTypes)",
+         "(make_install perl-libs/IO-HTML)",
          "(make_install perl-libs/HTTP-Message)",
-         "(make_install perl-libs/HTML-Parser)",
+         "(make_install perl-libs/HTTP-Negotiate)",
          "(make_install perl-libs/HTTP-Cookies)",
          "(make_install perl-libs/WWW-RobotRules)",
          "(make_install perl-libs/File-Listing)",
-         "(make_install perl-libs/HTTP-Negotiate)",
-         "(make_install perl-libs/Net-HTTP)",
+         "(make_install perl-libs/HTML-Tagset)",
+         "(make_install perl-libs/HTML-Parser)",
          "(make_install perl-libs/libwww-perl)",
+         "(make_install perl-libs/Mozilla-CA)",
+         "(make_install perl-libs/Net-SSLeay)",
+         "(make_install perl-libs/IO-Socket-SSL)",
          "(make_install perl-libs/LWP-Protocol-https)",
-         "(make_install perl-libs/Sub-Quote)",
-         "(make_install perl-libs/Class-Method-Modifiers)",
-         "(make_install perl-libs/Role-Tiny)",
-         "(make_install perl-libs/Moo)",
          "(make_install perl-libs/Ref-Util-XS)",
          "(make_install perl-libs/Ref-Util)",
+         "(make_install perl-libs/Safe-Isa)",
          "(make_install perl-libs/Exporter-Tiny)",
          "(make_install perl-libs/Type-Tiny)",
-         "(make_install perl-libs/Safe-Isa)",
+         "(make_install perl-libs/Sub-Quote)",
+         "(make_install perl-libs/Role-Tiny)",
+         "(make_install perl-libs/Class-Method-Modifiers)",
+         "(make_install perl-libs/Moo)",
          "(make_install perl-libs/MetaCPAN-Client)"
       ],
       "dest": "perl-libs",

@@ -20,7 +20,7 @@ modules:
       - type: git
         url: https://github.com/flatpak/flatpak-builder-tools.git
         branch: master
-        commit: cc61d31f888f759a30610f0ab63e847082456cf7
+        commit: eb90c620c77dd84b53b00bc937e211070b7a2a3c
         dest: tools
     modules:
       - python-aiohttp/python-aiohttp.json
@@ -31,8 +31,8 @@ modules:
             --prefix=${FLATPAK_DEST} requirements-parser --no-build-isolation
         sources:
           - type: file
-            url: https://files.pythonhosted.org/packages/c8/0d/6c9eb15fd4f6f45973ff1c70c170f2c30803415874e2e47c92eeae509085/types_setuptools-57.4.14-py3-none-any.whl
-            sha256: 828f7e7e51e157876f47c80518b23ba0c3c36aa8081efd39d5d39f393938aec9
+            url: https://files.pythonhosted.org/packages/f9/77/16e5ed45d555284f8f639e4a7fa2385b72b1d3ded69b813e821cb94e151c/types_setuptools-63.4.1-py3-none-any.whl
+            sha256: 8781e2fe71fd2885b085f2eeaad099468cda791b383ccbc735d9aad0c44f5355
             x-checker-data:
               type: pypi
               name: types-setuptools
