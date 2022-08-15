@@ -13,9 +13,16 @@ modules:
   - name: flatpak-builder-tools
     buildsystem: simple
     build-commands:
-      - install -dm755 /app/{bin,tools}
-      - cp --recursive --preserve=mode tools/* /app/tools/
-      - find /app/tools -type f -perm 0755 | xargs ln -s -t /app/bin/
+      - install -dm755 ${FLATPAK_DEST}/{bin,tools}
+      - |
+        set -e
+        cd node
+        python -m build --wheel
+        # TODO: switch to python-install when the new release with prefix support is out
+        pip3 install --verbose --exists-action=i --no-index --no-build-isolation --prefix=${FLATPAK_DEST} dist/*.whl
+        rm -r dist
+      - cp --recursive --preserve=mode * ${FLATPAK_DEST}/tools/
+      - find ${FLATPAK_DEST}/tools -type f -perm 0755 | xargs ln -s -t ${FLATPAK_DEST}/bin/
     sources:
       - type: git
         url: https://github.com/flatpak/flatpak-builder-tools.git
@@ -31,6 +38,21 @@ modules:
     modules:
       - python-packaging-tools/python-packaging-tools.json
       - python-aiohttp/python-aiohttp.json
+      - name: python-poetry-core
+        buildsystem: simple
+        build-commands:
+          - pip3 install --verbose --exists-action=i --no-index --find-links=file://${PWD}
+            --prefix=${FLATPAK_DEST} poetry-core --no-build-isolation
+        sources:
+          - type: file
+            url: https://files.pythonhosted.org/packages/d2/04/08841501db81bceb7a86a98dea7c12b0185fcc69bfdf1aea266f727d1d7e/poetry_core-1.0.8-py2.py3-none-any.whl
+            sha256: 54b0fab6f7b313886e547a52f8bf52b8cf43e65b2633c65117f8755289061924
+            x-checker-data:
+              type: pypi
+              name: poetry-core
+              packagetype: bdist_wheel
+        cleanup:
+          - '*'
       - name: python-requirements-parser
         buildsystem: simple
         build-commands:
