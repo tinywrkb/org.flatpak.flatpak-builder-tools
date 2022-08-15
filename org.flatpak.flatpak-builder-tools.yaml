@@ -19,9 +19,15 @@ modules:
     sources:
       - type: git
         url: https://github.com/flatpak/flatpak-builder-tools.git
-        branch: master
-        commit: eb90c620c77dd84b53b00bc937e211070b7a2a3c
-        dest: tools
+       #branch: master
+        commit: ba58a5c44ccb7d2e0ca0238d833d17de17c2b53b
+        x-checker-data:
+          is-main-source: true
+          type: json
+          url: https://api.github.com/repos/flatpak/flatpak-builder-tools/commits?sha=master&per_page=1
+          commit-query: .[].sha
+          version-query: .[].sha[0:8]
+          timestamp-query: .[].commit.committer.date
     modules:
       - python-packaging-tools/python-packaging-tools.json
       - python-aiohttp/python-aiohttp.json
