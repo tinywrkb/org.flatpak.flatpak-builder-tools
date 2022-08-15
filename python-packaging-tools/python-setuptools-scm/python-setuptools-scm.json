@@ -1,0 +1,22 @@
+{
+    "name": "python-setuptools-scm",
+    "buildsystem": "simple",
+    "build-commands": [
+        "pip3 install --verbose --exists-action=i --no-index --find-links=file://${PWD} --prefix=${FLATPAK_DEST} setuptools-scm --no-build-isolation"
+    ],
+    "sources": [
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/1a/dd/b83708410d912a56e6aa1f78ac1135465eb6a5cfe494628ae24e7dc5922f/setuptools_scm-7.0.2-py3-none-any.whl",
+            "sha256": "ec120c99027a785c7a349667480a5b2100dfc7d5063e545c93f3735508945aef",
+            "x-checker-data": {
+                "type": "pypi",
+                "name": "setuptools_scm",
+                "packagetype": "bdist_wheel"
+            }
+        }
+    ],
+    "cleanup": [
+        "*"
+    ]
+}

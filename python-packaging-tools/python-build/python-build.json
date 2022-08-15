@@ -1,0 +1,27 @@
+{
+    "name": "python-build",
+    "buildsystem": "simple",
+    "build-commands": [
+        "pip3 install --verbose --exists-action=i --no-index --find-links=file://${PWD} --prefix=${FLATPAK_DEST} build --no-build-isolation"
+    ],
+    "sources": [
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/7a/24/ee8271da317b692fcb9d026ff7f344ac6c4ec661a97f0e2a11fa7992544a/build-0.8.0-py3-none-any.whl",
+            "sha256": "19b0ed489f92ace6947698c3ca8436cb0556a66e2aa2d34cd70e2a5d27cd0437",
+            "x-checker-data": {
+                "type": "pypi",
+                "name": "build",
+                "packagetype": "bdist_wheel"
+            }
+        }
+    ],
+    "modules": [
+        "../python-tomli/python-tomli.json",
+        "../python-pep517/python-pep517.json",
+        "../python-packaging/python-packaging.json"
+    ],
+    "cleanup": [
+        "*"
+    ]
+}

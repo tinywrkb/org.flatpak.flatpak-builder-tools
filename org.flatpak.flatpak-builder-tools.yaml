@@ -23,6 +23,7 @@ modules:
         commit: eb90c620c77dd84b53b00bc937e211070b7a2a3c
         dest: tools
     modules:
+      - python-packaging-tools/python-packaging-tools.json
       - python-aiohttp/python-aiohttp.json
       - name: python-requirements-parser
         buildsystem: simple
