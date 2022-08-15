@@ -72,12 +72,12 @@ modules:
           - perl-libs/install.sh
         post-install:
           # workaround for cpanm acting silly and installs files without write permission
-          - find /app -type f ! -perm -0200 -exec chmod u+w '{}' \;
+          - find ${FLATPAK_DEST} -type f ! -perm -0200 -exec chmod u+w '{}' \;
         sources:
           - perl-dependencies-sources.json
           - type: shell
             commands:
               # fix the generated install.sh to avoid having it try to install into /usr
-              - sed -e 's|\(perl Makefile.PL\).* \&\& \(make install\).*|\1 INSTALL_BASE=/app
-                \&\& \2|' -e 's|\(perl Build.PL\) \&\&|\1 --install_base=/app \&\&|'
+              - sed -e 's|\(perl Makefile.PL\).* \&\& \(make install\).*|\1 INSTALL_BASE='${FLATPAK_DEST}'
+                \&\& \2|' -e 's|\(perl Build.PL\) \&\&|\1 --install_base='${FLATPAK_DEST}' \&\&|'
                 -i perl-libs/install.sh
